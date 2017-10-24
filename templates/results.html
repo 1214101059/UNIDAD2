@@ -1,0 +1,42 @@
+ {% extends 'base.html'%}
+ {% block body %}
+     <p>El resultado es:</p>
+     <table>
+
+         <tr>
+	      <td>G:</td>
+	      <td>{{the_G}}</td>
+        </tr>
+         <tr>
+	      <td>M:</td>
+	      <td>{{the_M}}</td>
+        </tr>
+         <tr>
+	      <td>R:</td>
+	      <td>{{the_r}}</td>
+        </tr>
+	    <tr>
+	      <td colspan="2">
+		     V=-G(M/R)
+		  </td>
+        </tr>
+         <tr>
+	      <td>v:</td>
+		  <td>{{the_result}}</td>
+        </tr>
+      <tr>
+	      <td colspan="2">
+		     F=(9/5 *C) + 32
+		  </td>
+        </tr>
+        <tr>
+	      <td>C:</td>
+	      <td>{{the_C}}</td>
+        </tr>
+     <tr>
+	      <td>F:</td>
+	      <td>{{the_result2}}</td>
+        </tr>
+     </table>
+
+{%endblock%}

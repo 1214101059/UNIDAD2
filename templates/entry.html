@@ -1,0 +1,40 @@
+{% extends 'base.html'%}
+{% block body %}
+   <h2>{{the_title}}</h2> 
+   <form action="/calculate" method="post">
+     <table>
+	    <p>Formulario para calcular el potencial gravitacional y convertir grados Celsius a Farenheit/p>
+		<tr>
+
+		 <tr>
+		   <td>G:</td>
+		   <td><input type="number" name="G" /></td>
+		</tr>
+		 <tr>
+		   <td>M:</td>
+		   <td><input type="number" name="M" /></td>
+		</tr>
+		 <tr>
+		   <td>R:</td>
+		   <td><input type="number" name="r" /></td>
+		</tr>
+
+		 </tr>
+         <tr>
+	      <td colspan="2">
+		     Formulario de Celsius a Farenheit
+		  </td>
+        </tr>
+         <tr>
+		   <td>C:</td>
+		   <td><input type="number" name="C" /></td>
+		</tr>
+          </table>
+         <p>AL terminar, dar click</p>
+         <p><input type="submit" name="btn_calculate" value="calculate" /></p>
+
+	</form>
+{% endblock%}
+
+
+
